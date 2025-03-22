@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/library-2997608.png" type="image/icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/library-2997608.png" type="image/icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Библиотека</h1>
-        <button id="newBookBtn">+ Новая книга</button>
+      <h1>Библиотека</h1>
+      <button id="newBookBtn">+ Новая книга</button>
     </header>
-     
+
     <div id="popup">
-        <div class="popup-content">
-            <h2>Добавить книгу</h2>
-            <span class="close-btn">&times;</span>
+      <div class="popup-content">
+        <h2>Добавить книгу</h2>
+        <span class="close-btn">&times;</span>
 
-            <form id="bookForm">
-                <label for="title">Название:</label>
-                <input type="text" id="title" required>
+        <form id="bookForm" novalidate>
+          <label for="title">Название:</label>
+          <input type="text" id="title" />
 
-                <label for="author">Автор:</label>
-                <input type="text" id="author" required>
+          <label for="author">Автор:</label>
+          <input type="text" id="author" />
 
-                <label for="pages">Страницы:</label>
-                <input type="number" id="pages" required>
+          <label for="pages">Страницы:</label>
+          <input type="number" id="pages" />
 
-                <label for="read">Прочитано?</label>
-                <select id="read">
-                    <option value="Да">Да</option>
-                    <option value="Нет">Нет</option>
-                </select>
+          <label for="read">Прочитано?</label>
+          <select id="read">
+            <option value="Да">Да</option>
+            <option value="Нет">Нет</option>
+          </select>
 
-                <button type="submit">Добавить</button>
-            </form>
-        </div>
+          <button type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
 
     <div id="library-container"></div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
